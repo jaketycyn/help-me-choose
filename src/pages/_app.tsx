@@ -1,18 +1,17 @@
 import { type AppType } from "next/app";
 import { ClerkProvider } from "@clerk/nextjs";
 
-import { GlobalContextProvider } from "context/globalContext";
 import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <ClerkProvider {...pageProps}>
-      <GlobalContextProvider>
+    <div className="bg-[#0f0f0f]">
+      <ClerkProvider {...pageProps}>
         <Component {...pageProps} />;
-      </GlobalContextProvider>
-    </ClerkProvider>
+      </ClerkProvider>
+    </div>
   );
 };
 
