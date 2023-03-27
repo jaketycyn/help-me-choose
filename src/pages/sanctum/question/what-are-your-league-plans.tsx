@@ -3,10 +3,15 @@ import { useRouter } from "next/router";
 
 const QuestionPage = (props) => {
   const router = useRouter();
-  const answerQuestionFunction = async (answer: string) => {
+  const answerQuestionFunction = async (answer) => {
     if (answer === "idk just play POE") {
       await router.push("/sanctum/question/wanna-try-the-new-stuff");
-      console.log("Selected -idk just play POE");
+    }
+    if (answer === "I want to go off-meta") {
+      await router.push("/sanctum/question/do-you-want-old-meta");
+    }
+    if (answer === "I have to work :(") {
+      await router.push("/sanctum/question/i-have-to-work");
     }
   };
 
@@ -31,7 +36,7 @@ const QuestionPage = (props) => {
 
       <div className="mx-auto grid w-full grid-cols-1 items-center justify-center gap-10 py-20 lg:w-2/3 lg:grid-cols-2 xl:w-1/2 ">
         {questionData?.answers.map((answer, index) => (
-          <div key={index}>
+          <div key={index} className="py-4">
             <button
               className="h-20 w-72 rounded-md bg-zinc-800 font-semibold text-neutral-200 hover:bg-zinc-700"
               onClick={() => answerQuestionFunction(answer)}

@@ -4,18 +4,20 @@ import { useRouter } from "next/router";
 const QuestionPage = (props) => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
-    if (answer === "Newly Buffed Skills") {
+    if (answer === "Really old") {
       await router.push("/sanctum/builds/blade-flurry-raider");
     }
-    if (answer === "New Skills") {
-      await router.push("are-you-okay-with-the-build");
+    if (answer === "Kinda old") {
+      await router.push("/sanctum/builds/cyclone-slayer");
+    }
+    if (answer === "Not that old") {
+      await router.push("/sanctum/builds/frost-blades-raider");
     }
   };
 
   const questionData = {
-    id: 2,
-    question: "What kind of new?",
-    answers: ["Newly Buffed Skills", "New Skills"],
+    question: "How old?",
+    answers: ["Really old", "Kinda old", "Not that old"],
   };
 
   return (
@@ -24,7 +26,7 @@ const QuestionPage = (props) => {
         {questionData?.question}
       </div>
 
-      <div className="mx-auto grid w-full grid-cols-1 items-center justify-center gap-10 py-20 lg:w-2/3 lg:grid-cols-2 xl:w-1/2 ">
+      <div className="mx-auto grid w-full grid-cols-1 items-center justify-center gap-10 py-20 lg:w-full lg:grid-cols-1 xl:w-2/5 ">
         {questionData?.answers.map((answer, index) => (
           <div key={index} className="py-4">
             <button

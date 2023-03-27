@@ -3,25 +3,18 @@ import YouTube from "react-youtube";
 
 const BuildPage = (props) => {
   const buildData = {
-    name: "Frozen Legion (Slayer / Chieftan)",
-    description: `New Skill - Play at your own risk`,
+    name: "Maw of Mischief",
+    description: "",
     youtubeVideos: [
       {
-        url: "IOUWX4cnSXU",
-        creator: "CaptainLance",
-        channelUrl: "https://www.youtube.com/@CaptainLance9",
+        url: "kYprS6wMyns",
+        creator: "Tripolar Bear",
+        channelUrl: "https://www.youtube.com/@TripolarBear",
       },
       {
-        url: "WuFzMh_wf8E",
-        creator: "Mathil",
-        channelUrl: "https://www.youtube.com/@Mathilification",
-      },
-    ],
-    youtubeVideosVariant: [
-      {
-        url: "KLFV3L4eQ7A",
-        creator: "Zizaren",
-        channelUrl: "https://www.youtube.com/@Zizaran",
+        url: "https://www.youtube.com/watch?v=Bj90jl_GA50",
+        creator: "Palsteron",
+        channelUrl: "https://www.youtube.com/@Palsteron",
       },
     ],
   };
@@ -47,7 +40,7 @@ const BuildPage = (props) => {
       {/* Main Videos */}
       <div className="mx-auto grid grid-cols-1 items-center justify-center space-x-4 px-8 lg:grid-cols-2 lg:px-20">
         {buildData.youtubeVideos.map((video, index) => (
-          <div key={index}>
+          <div key={index} className="py-4">
             <YouTube
               videoId={video.url}
               opts={opts}

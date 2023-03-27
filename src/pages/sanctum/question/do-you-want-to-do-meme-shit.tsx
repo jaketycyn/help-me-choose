@@ -6,15 +6,12 @@ const QuestionPage = (props) => {
   const answerQuestionFunction = async (answer: string) => {
     if (answer === "Always") {
       await router.push("/sanctum/builds/flicker-strike-raider");
-      console.log("Selected - Sure");
     }
     if (answer === "Kinda") {
       await router.push("/sanctum/builds/artillery-ballista-raider");
-      console.log("Selected - Sure");
     }
     if (answer === "No") {
       await router.push("complicated-or-simple");
-      console.log("Selected - No");
     }
   };
 
@@ -31,7 +28,7 @@ const QuestionPage = (props) => {
 
       <div className="mx-auto grid w-full grid-cols-1 items-center justify-center gap-10 py-20 lg:w-full lg:grid-cols-1 xl:w-2/5 ">
         {questionData?.answers.map((answer, index) => (
-          <div key={index}>
+          <div key={index} className="py-4">
             <button
               className="h-20 w-72 rounded-md bg-zinc-800 font-semibold text-neutral-200 hover:bg-zinc-700"
               onClick={() => answerQuestionFunction(answer)}

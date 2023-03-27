@@ -4,18 +4,18 @@ import { useRouter } from "next/router";
 const QuestionPage = (props) => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
-    if (answer === "Newly Buffed Skills") {
-      await router.push("/sanctum/builds/blade-flurry-raider");
+    if (answer === "Obviously") {
+      await router.push("/sanctum/builds/hydrosphere");
     }
-    if (answer === "New Skills") {
-      await router.push("are-you-okay-with-the-build");
+    if (answer === "No") {
+      await router.push("/sanctum/builds/maw-of-mischief");
     }
   };
 
   const questionData = {
-    id: 2,
-    question: "What kind of new?",
-    answers: ["Newly Buffed Skills", "New Skills"],
+    id: 0,
+    question: "Do you want explosions?",
+    answers: ["Obviously", "No"],
   };
 
   return (

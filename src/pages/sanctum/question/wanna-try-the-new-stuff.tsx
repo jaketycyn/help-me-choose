@@ -6,11 +6,9 @@ const QuestionPage = (props) => {
   const answerQuestionFunction = async (answer: string) => {
     if (answer === "Sure") {
       await router.push("what-kind-of-new");
-      console.log("Selected - Sure");
     }
     if (answer === "No") {
       await router.push("do-you-want-to-do-meme-shit");
-      console.log("Selected - No");
     }
   };
 
@@ -28,7 +26,7 @@ const QuestionPage = (props) => {
 
       <div className="mx-auto grid w-full grid-cols-1 items-center justify-center gap-10 py-20 lg:w-2/3 lg:grid-cols-2 xl:w-1/2 ">
         {questionData?.answers.map((answer, index) => (
-          <div key={index}>
+          <div key={index} className="py-4">
             <button
               className="h-20 w-72 rounded-md bg-zinc-800 font-semibold text-neutral-200 hover:bg-zinc-700"
               onClick={() => answerQuestionFunction(answer)}

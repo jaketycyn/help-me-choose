@@ -4,18 +4,18 @@ import { useRouter } from "next/router";
 const QuestionPage = (props) => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
-    if (answer === "Newly Buffed Skills") {
-      await router.push("/sanctum/builds/blade-flurry-raider");
+    if (answer === "Old") {
+      await router.push("/sanctum/question/how-old");
     }
-    if (answer === "New Skills") {
-      await router.push("are-you-okay-with-the-build");
+    if (answer === "Never") {
+      await router.push("/sanctum/question/do-you-want-explosions");
     }
   };
 
   const questionData = {
-    id: 2,
-    question: "What kind of new?",
-    answers: ["Newly Buffed Skills", "New Skills"],
+    id: 0,
+    question: "Do you want old meta or never meta?",
+    answers: ["Old", "Never"],
   };
 
   return (

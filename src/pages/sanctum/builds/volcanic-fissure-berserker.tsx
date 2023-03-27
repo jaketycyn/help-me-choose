@@ -37,7 +37,7 @@ const BuildPage = (props) => {
   return (
     <div className="h-fit  text-center">
       {/* Build Slot */}
-      <h1 className=" pt-4 pb-4 text-center text-3xl font-semibold text-neutral-200">
+      <h1 className=" pt-20 pb-4 text-center text-3xl font-semibold text-neutral-200">
         {buildData.name}
       </h1>
       {/* Description */}
@@ -47,7 +47,7 @@ const BuildPage = (props) => {
       {/* Main Videos */}
       <div className="mx-auto grid grid-cols-1 items-center justify-center space-x-4 px-8 lg:grid-cols-2 lg:px-20">
         {buildData.youtubeVideos.map((video, index) => (
-          <div key={index}>
+          <div key={index} className="py-4">
             <YouTube
               videoId={video.url}
               opts={opts}
