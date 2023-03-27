@@ -3,16 +3,8 @@ import YouTube from "react-youtube";
 
 const BuildPage = (props) => {
   const buildData = {
-    name: "Explosive Arrow Ignite Elementalist",
-    description: `This build is a totem build with excellent DPS, an easy gear curve and
-        great damage. Because this build is a totem build it's great for players
-        who find boss mechanics difficult as, like minions, it does damage
-        without you having to be constantly targeting the boss - simply place
-        the totems down and dodge. This build is excellent in both trade and SSF
-        with the primary weapon for this build is a multimod weapon that uses a
-        base that you can farm (Porcupine) and is crafted with essences. This
-        build does have two delays in its damage, there is a wait time as totems
-        "arm" themselves and a delay before the arrows explode.`,
+    name: "Build Name",
+    description: ``,
     youtubeVideos: [
       {
         url: "grWNV7YLvIc",
@@ -76,7 +68,7 @@ const BuildPage = (props) => {
         ))}
       </div>
       {/* hardcore variant slot */}
-      <h2 className="pt-10 pb-4 text-2xl font-semibold text-neutral-200">
+      {/* <h2 className="pt-10 pb-4 text-2xl font-semibold text-neutral-200">
         Hardcore Variant (Champion)
       </h2>
       {buildData.youtubeVideosVariant.map((video, index) => (
@@ -98,7 +90,7 @@ const BuildPage = (props) => {
             </a>
           </Link>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
