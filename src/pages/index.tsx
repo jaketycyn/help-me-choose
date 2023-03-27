@@ -2,7 +2,8 @@ import { type NextPage } from "next";
 import Head from "next/head";
 
 import { api } from "~/utils/api";
-import UserSignIn from "./UserSignIn";
+import Auth from "./auth";
+import Landingpage from "./landingpage";
 
 const Home: NextPage = (props) => {
   return (
@@ -14,8 +15,10 @@ const Home: NextPage = (props) => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-white">
         {/* <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]"> */}
-        <div>Hi</div>
-        <UserSignIn />
+
+        {/* Auth for keeping data later */}
+        {/* <Auth /> */}
+        <Landingpage />
       </main>
     </>
   );
