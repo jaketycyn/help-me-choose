@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const ExplosiveArrowIgniteElementalistPage = (props) => {
+const BuildPage = (props) => {
   const buildData = {
     name: "Explosive Arrow Ignite Elementalist",
     description: `This build is a totem build with excellent DPS, an easy gear curve and
@@ -49,7 +49,7 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
         {buildData.name}
       </h1>
       {/* Description */}
-      <h3 className="lg:neutraltext-neutral-200 px-10 py-4 font-semibold text-neutral-200 md:px-20">
+      <h3 className=" lg:px-1/2 px-10 py-4 font-semibold text-neutral-200 md:px-72">
         {buildData.description}
       </h3>
       {/* Main Videos */}
@@ -65,9 +65,11 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 text-xl font-semibold text-neutral-200"
+                className="  py-2 text-xl font-semibold text-neutral-200"
               >
-                {video.creator}
+                <button className="h-10 w-40 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
+                  {video.creator}
+                </button>
               </a>
             </Link>
           </div>
@@ -90,7 +92,9 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
               rel="noopener noreferrer"
               className="py-2 text-xl font-semibold text-neutral-200"
             >
-              {video.creator}
+              <button className="h-10 w-40 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
+                {video.creator}
+              </button>
             </a>
           </Link>
         </div>
@@ -99,4 +103,4 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
   );
 };
 
-export default ExplosiveArrowIgniteElementalistPage;
+export default BuildPage;

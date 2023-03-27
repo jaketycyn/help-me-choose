@@ -20,14 +20,16 @@ const QuestionPage = (props) => {
   };
 
   return (
-    <div className="flex h-screen flex-col bg-pink-300 text-center">
-      <div>{questionData?.question}</div>
+    <div className="flex h-screen flex-col bg-[#0f0f0f] text-center">
+      <div className="pt-20 text-center text-4xl font-semibold  text-neutral-200">
+        {questionData?.question}
+      </div>
 
-      <div className="grid  w-full  gap-3 bg-green-800 p-2 ">
+      <div className="mx-auto grid w-full grid-cols-1 items-center justify-center gap-10 py-20 lg:w-2/3 lg:grid-cols-2 xl:w-1/2 ">
         {questionData?.answers.map((answer, index) => (
           <div key={index}>
             <button
-              className="h-20 w-72 bg-slate-400 hover:bg-yellow-400"
+              className="h-20 w-72 rounded-md bg-zinc-800 font-semibold text-neutral-200 hover:bg-zinc-700"
               onClick={() => answerQuestionFunction(answer)}
             >
               {answer}
