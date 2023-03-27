@@ -5,7 +5,7 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
     height: "360",
     width: "640",
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
     },
   };
 
@@ -15,13 +15,13 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
   };
 
   return (
-    <div className="text-center">
+    <div className="h-fit bg-zinc-800 text-center">
       {/* Build Slot */}
-      <h1 className=" pt-4 pb-4 text-center text-3xl font-semibold">
+      <h1 className=" pt-4 pb-4 text-center text-3xl font-semibold text-neutral-200">
         Explosive Arrow Ignite Elementalist
       </h1>
       {/* Description */}
-      <h3 className="px-10 py-4 font-semibold md:px-20 lg:px-40">
+      <h3 className="lg:neutraltext-neutral-200 px-10 py-4 font-semibold text-neutral-200 md:px-20">
         This build is a totem build with excellent DPS, an easy gear curve and
         great damage. Because this build is a totem build it’s great for players
         who find boss mechanics difficult as, like minions, it does damage
@@ -39,7 +39,9 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
             opts={opts}
             className="flex justify-center  "
           />
-          <h4 className="pb-2 text-xl font-semibold">Palsteron</h4>
+          <h4 className="py-2 text-xl font-semibold text-neutral-200">
+            Palsteron
+          </h4>
         </div>
         <div>
           <YouTube
@@ -47,11 +49,13 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
             opts={opts}
             className="flex justify-center"
           />
-          <h4 className="pb-2 text-xl font-semibold">Lighty</h4>
+          <h4 className="py-2 text-xl font-semibold text-neutral-200">
+            Lighty
+          </h4>
         </div>
       </div>
       {/* hardcore variant slot */}
-      <h2 className="pt-10 text-2xl font-semibold">
+      <h2 className="pt-10 pb-4 text-2xl font-semibold text-neutral-200">
         Hardcore Variant (Champion)
       </h2>
       <div>
@@ -60,7 +64,7 @@ const ExplosiveArrowIgniteElementalistPage = (props) => {
           opts={opts}
           className="flex justify-center "
         />
-        <h4 className="pb-2 text-xl font-semibold">Zizaren</h4>
+        <h4 className="py-2 text-xl font-semibold text-neutral-200">Zizaren</h4>
       </div>
     </div>
   );
