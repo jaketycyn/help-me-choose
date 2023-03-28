@@ -1,9 +1,7 @@
-// @ts-nocheck
-
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const BuildPage = (props) => {
+const BuildPage = () => {
   const buildData = {
     name: "Artillery Ballista Raider",
     description: `How's it a meme? Cause its kinda funny nobody realized it's actually good`,

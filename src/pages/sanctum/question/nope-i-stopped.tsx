@@ -1,10 +1,7 @@
-// @ts-nocheck
-
-import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-const QuestionPage = (props) => {
+const QuestionPage = () => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
     if (answer === "Soooooo what build?") {

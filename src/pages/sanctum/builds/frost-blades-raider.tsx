@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import Link from "next/link";
 import YouTube from "react-youtube";
 

@@ -1,8 +1,6 @@
-// @ts-nocheck
-import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-const QuestionPage = (props: any) => {
+const QuestionPage = () => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
     if (answer === "idk just play POE") {
