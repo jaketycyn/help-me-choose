@@ -13,6 +13,22 @@ const QuestionPage = (props) => {
     if (answer === "I have to work :(") {
       await router.push("/sanctum/question/i-have-to-work");
     }
+    if (
+      answer === "I took time off and prepared a weeks worth of healthy meals"
+    ) {
+      await router.push("/sanctum/question/i-took-time-off");
+    }
+    if (answer === "I want a build that got nerfed but will still be fine") {
+      await router.push("/sanctum/question/i-want-a-build-that-got-nerfed");
+    }
+    if (
+      answer ===
+      "I want a build that's fun but kinda mid so I can blame that for being slow"
+    ) {
+      await router.push(
+        "/sanctum/question/i-want-a-build-thats-fun-but-kinda-mid"
+      );
+    }
   };
 
   const questionData = {
