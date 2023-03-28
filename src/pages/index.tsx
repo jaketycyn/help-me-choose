@@ -1,8 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 
-import { api } from "~/utils/api";
-import Auth from "./auth";
 import Landingpage from "./landingpage";
 
 const Home: NextPage = (props) => {
@@ -14,10 +12,6 @@ const Home: NextPage = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-black">
-        {/* <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]"> */}
-
-        {/* Auth for keeping data later */}
-        {/* <Auth /> */}
         <Landingpage />
       </main>
     </>
