@@ -1,9 +1,8 @@
-// @ts-nocheck
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-const QuestionPage = (props) => {
+const QuestionPage = () => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
     if (answer === "Actually good") {
@@ -30,7 +29,7 @@ const QuestionPage = (props) => {
         <div className="py-4">
           <button
             className="h-20 w-72 rounded-md bg-zinc-800 font-semibold text-neutral-200 hover:bg-zinc-700"
-            onClick={() => answerQuestionFunction(questionData.answers[0])}
+            onClick={() => answerQuestionFunction(questionData.answers[0]!)}
           >
             {questionData.answers[0]}
           </button>
@@ -46,6 +45,7 @@ const QuestionPage = (props) => {
             <div>
               <Image
                 src="/copium.png"
+                alt="copium.jpg"
                 width={70}
                 height={70}
                 className="mx-auto flex"
