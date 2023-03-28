@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-const QuestionPage = () => {
+const QuestionPage = (props) => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
     if (answer === "Soooooo what build?") {
@@ -24,6 +24,7 @@ const QuestionPage = () => {
           {" "}
           <Image
             src="/pepelaugh.png"
+            alt="pepelaugh.jpg"
             width={70}
             height={70}
             className="mx-auto flex pl-2 "
