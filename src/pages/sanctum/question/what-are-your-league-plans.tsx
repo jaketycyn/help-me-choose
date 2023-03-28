@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-const QuestionPage = () => {
+const QuestionPage = (props) => {
   const router = useRouter();
-  const answerQuestionFunction = async (answer) => {
+  const answerQuestionFunction = async (answer: string) => {
     if (answer === "idk just play POE") {
       await router.push("/sanctum/question/wanna-try-the-new-stuff");
     }
