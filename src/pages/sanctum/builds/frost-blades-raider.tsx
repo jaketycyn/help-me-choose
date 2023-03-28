@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const BuildPage = () => {
+const BuildPage = (props) => {
   const buildData = {
     name: "Frost Blades (Raider / Trickster)",
     description: "",
@@ -39,7 +39,7 @@ const BuildPage = () => {
       {/* Main Videos */}
       <div className="mx-auto grid grid-cols-1 items-center justify-center space-x-4 px-8 lg:grid-cols-2 lg:px-20">
         {buildData.youtubeVideos.map((video, index) => (
-          <div key={index} className="py-4" className="py-4">
+          <div key={index} className="py-4">
             <YouTube
               videoId={video.url}
               opts={opts}
