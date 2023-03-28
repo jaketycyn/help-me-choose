@@ -6,7 +6,7 @@ function cn(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Landingpage = (props) => {
+const Landingpage = (props: any) => {
   // const gameData = [
   //   {
   //     id: 1,
