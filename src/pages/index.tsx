@@ -12,7 +12,7 @@ const Home: NextPage = (props: any) => {
           name="description"
           content="A simple app to help you find your leaguestart"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/pepelaugh.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-black">
         <Landingpage />
