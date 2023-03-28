@@ -1,25 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
-function cn(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-const Landingpage = (props) => {
-  // const gameData = [
-  //   {
-  //     id: 1,
-  //     name: "Elden Ring",
-  //     image: "/gamecovers/eldenring_01.jpg",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "God of War: Ragnarok",
-  //     image: "/gamecovers/godofwarragnarok.jpg",
-  //   },
-  // ];
-  const [isLoading, setLoading] = useState(true);
+const Landingpage = () => {
   return (
     <div>
       <Link href={"/sanctum/question/what-are-your-league-plans"}>
