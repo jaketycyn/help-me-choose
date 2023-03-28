@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const ExplosiveArrowIgniteElementalistPage = (props: any) => {
+const ExplosiveArrowIgniteElementalistPage = () => {
   const buildData = {
     name: "Righteous Fire",
     description: `Righteous Fire is a build where you have a damaging fire aura that surrounds you, you clear maps by running head first into enemies and having them die to the damage over time effect surrounding you. This is a great build for those that wish to press less buttons while mapping. This build is very defensively strong and with investment scales into one of the tankiest builds in the game. This build can struggle for damage when it comes to late game bossing.`,

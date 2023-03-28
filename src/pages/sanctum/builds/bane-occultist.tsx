@@ -11,7 +11,6 @@ const BuildPage = (props) => {
         creator: "Subtractem",
         channelUrl: "https://www.youtube.com/@subtractem",
       },
-      
     ],
   };
 

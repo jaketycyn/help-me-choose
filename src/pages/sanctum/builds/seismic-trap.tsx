@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const ExplosiveArrowIgniteElementalistPage = (props: any) => {
+const ExplosiveArrowIgniteElementalistPage = () => {
   const buildData = {
     name: "Seismic Trap",
     description: `Seismic Trap is a build that utilizes two skills, one for clear (exsanguinate traps) and one for single target damage (seismic trap). The build is a trap build so that means you'll be throwing out traps which will detonate themselves targeting enemies around them. For the purpose of this section of the index we will be including mostly just the poison variant of this build as it's the most league start friendly but it can transition into a crit based version with some investment. This build excels at single target damage and has decent clear, though you may struggle against moving bosses.`,

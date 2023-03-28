@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const ExplosiveArrowIgniteElementalistPage = (props) => {
+const ExplosiveArrowIgniteElementalistPage = () => {
   const buildData = {
     name: "Cold DoT",
     description: `This build utilizes a variety of different cold skills to apply cold damage over time effects to bring down your enemies. You run around dropping areas of damaging cold This build is a solid bossing build but the map clear is not top end, though it's still respectable. Because this build is a damage over time build the DPS uptime is near constant which makes bossing very comfortable. There are a few different variants of this build (primarily elementalist, trickster and occultist), Elementalist has great clear and the highest damage, Trickster is more defensive focused and Occulist has easy access to explosions to boost clear.`,

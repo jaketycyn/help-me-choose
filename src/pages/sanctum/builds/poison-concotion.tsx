@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const ExplosiveArrowIgniteElementalistPage = (props) => {
+const ExplosiveArrowIgniteElementalistPage = () => {
   const buildData = {
     name: "Poison Concoction",
     description: `Poisonous Concoction is a skill which throws out poisonous vials that cause overlapping explosions which can stack up poison very quickly. It is a build requiring very little gear to get going (as part of the skill you can not use a weapon at all), since this build scales its damage off your life flask a solid version of this build can come online very quickly as well as clearing the campaign very comfortably. This build uses Plague Bearer for rapid clear as it zooms through maps. There are two common variants of this build, the Pathfinder and the Occultist versions. This build can struggle with single target in the late game but as long as you’re comfortable with boss mechanics can carry you through to 4 watchstones at great speed.`,

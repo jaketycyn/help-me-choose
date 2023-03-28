@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Landingpage from "./landingpage";
 
-const Home: NextPage = (props: any) => {
+const Home: NextPage = (props) => {
   return (
     <>
       <Head>

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-const QuestionPage = (props: any) => {
+const QuestionPage = (props) => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
     if (answer === "Actually good") {

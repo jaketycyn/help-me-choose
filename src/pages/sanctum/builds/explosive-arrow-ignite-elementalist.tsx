@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const ExplosiveArrowIgniteElementalistPage = (props) => {
+const ExplosiveArrowIgniteElementalistPage = () => {
   const buildData = {
     name: "Explosive Arrow Ignite Elementalist",
     description: `This build is a totem build with excellent DPS, an easy gear curve and

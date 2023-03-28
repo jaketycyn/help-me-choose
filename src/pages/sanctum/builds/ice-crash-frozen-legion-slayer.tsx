@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const BuildPage = (props) => {
+const BuildPage = () => {
   const buildData = {
     name: "Frozen Legion (Slayer / Chieftan)",
     description: `New Skill - Play at your own risk`,
