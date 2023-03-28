@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const BuildPage = (props) => {
+const BuildPage = (props: any) => {
   const buildData = {
     name: "Volcanic Fissure Berserker",
     description: `New Skill - Play at your own risk`,

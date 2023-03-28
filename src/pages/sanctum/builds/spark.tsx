@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-const BuildPage = (props) => {
+const BuildPage = (props: any) => {
   const buildData = {
     name: "Spark",
     description: "",

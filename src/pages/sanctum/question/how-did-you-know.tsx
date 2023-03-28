@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-const QuestionPage = (props) => {
+const QuestionPage = (props: any) => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
     if (answer === "so now you go hard?") {
