@@ -8,7 +8,7 @@ const BuildPage = () => {
     youtubeVideos: [
       {
         url: "nqxl8UsO5Cc",
-        creator: "Zizaren",
+        creator: "Zizaran",
         channelUrl: "https://www.youtube.com/@Zizaran",
       },
       {
