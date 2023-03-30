@@ -8,7 +8,6 @@ const Landingpage = () => {
           Help me find a leaguestarter
         </button>
       </Link>
-      landingpage
     </div>
   );
 };
