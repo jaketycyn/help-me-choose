@@ -15,7 +15,7 @@ const BuildPage = () => {
     youtubeVideosVariant: [
       {
         url: "KLFV3L4eQ7A",
-        creator: "Zizaren",
+        creator: "Zizaran",
         channelUrl: "https://www.youtube.com/@Zizaran",
       },
     ],

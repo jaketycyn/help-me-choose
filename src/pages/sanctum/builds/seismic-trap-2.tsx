@@ -8,7 +8,7 @@ const ExplosiveArrowIgniteElementalistPage = () => {
     youtubeVideos: [
       {
         url: "IRC9wSHSVKs",
-        creator: "Zizaren",
+        creator: "Zizaran",
         channelUrl: "https://www.youtube.com/@Zizaran",
       },
       {
