@@ -9,7 +9,7 @@ export default function DesktopNavBar() {
             className="hover:text-content-accent font-semibold"
             href={`/sanctum/question/what-are-your-league-plans`}
           >
-            <h3 className="mx-auto  flex h-8 w-20 flex-row items-center justify-center rounded-xl bg-slate-800 text-center text-white hover:bg-slate-500">
+            <h3 className="mx-auto  flex h-8 w-20 flex-row items-center justify-center rounded-xl bg-neutral-800 text-center text-white hover:bg-neutral-600">
               Home
             </h3>
           </Link>
