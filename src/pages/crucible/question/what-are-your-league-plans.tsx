@@ -6,6 +6,18 @@ const QuestionPage = () => {
     if (answer === "I want something very simple to play") {
       await router.push("/crucible/question/how-simple");
     }
+    if (answer === "Just give me the smooth meta builds") {
+      await router.push("/crucible/question/what-do-you-mean-by-smooth");
+    }
+    if (answer === "I want to finally play hit-based bows") {
+      await router.push("/crucible/question/do-you-want-to-compete-for-gear");
+    }
+    if (answer === "I want something that got nerfed") {
+      await router.push("/crucible/question/why");
+    }
+    if (answer === "I want the jank") {
+      await router.push("/crucible/question/what-kind-of-jank");
+    }
   };
 
   const questionData = {

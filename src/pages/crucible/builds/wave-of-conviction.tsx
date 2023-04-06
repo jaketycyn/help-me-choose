@@ -1,17 +1,16 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import YouTube from "react-youtube";
-
-const RighteousFireBuildPage = () => {
+import { useRouter } from "next/router";
+const BuildPage = () => {
   const router = useRouter();
   const buildData = {
-    name: "Righteous Fire",
-    description: `Righteous Fire is a build where you have a damaging fire aura that surrounds you, you clear maps by running head first into enemies and having them die to the damage over time effect surrounding you. This is a great build for those that wish to press less buttons while mapping. This build is very defensively strong and with investment scales into one of the tankiest builds in the game. This build can struggle for damage when it comes to late game bossing.`,
+    name: "Wave of Conviction Ignite Elementalist",
+    description: "Can swap to EK Ignite when wealthy",
     youtubeVideos: [
       {
-        url: "Ji0CqE8F3wU",
-        creator: "Pohx",
-        channelUrl: "https://www.youtube.com/@PohxKappa",
+        url: "dnhjU31YO0c",
+        creator: "James Humphrey",
+        channelUrl: "https://www.youtube.com/@therealjameshumphrey",
       },
     ],
   };
@@ -35,18 +34,6 @@ const RighteousFireBuildPage = () => {
         {buildData.description}
       </h3>
       {/* Main Videos */}
-
-      <Link href={"https://www.pohx.net/FAQ"} legacyBehavior>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="  py-2 text-xl font-semibold text-neutral-200"
-        >
-          <button className="h-10 w-72 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
-            Pohx RF Wiki - FAQ
-          </button>
-        </a>
-      </Link>
       <div className="mx-auto grid grid-cols-1 items-center justify-center space-x-4 px-8 lg:grid-cols-1 lg:px-20">
         {buildData.youtubeVideos.map((video, index) => (
           <div key={index} className="py-4">
@@ -61,7 +48,7 @@ const RighteousFireBuildPage = () => {
                 rel="noopener noreferrer"
                 className="  py-2 text-xl font-semibold text-neutral-200"
               >
-                <button className="h-10 w-40 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
+                <button className="h-10 w-52 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
                   {video.creator}
                 </button>
               </a>
@@ -72,16 +59,15 @@ const RighteousFireBuildPage = () => {
       <div className="pt-20">
         <button
           className=" h-20 w-72 rounded-md bg-zinc-800 font-semibold text-neutral-200 hover:bg-zinc-700"
-          onClick={() => router.push("/sanctum/builds/righteous-fire")}
+          onClick={() => router.push("/sanctum/builds/wave-of-conviction")}
         >
           <div className="mx-auto flex flex-row items-center justify-center p-2 text-center ">
             Last Leagues Variants
           </div>
         </button>
       </div>
-      {/* hardcore variant slot */}
     </div>
   );
 };
 
-export default RighteousFireBuildPage;
+export default BuildPage;

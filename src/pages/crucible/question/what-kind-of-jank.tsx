@@ -1,20 +1,22 @@
 import { useRouter } from "next/router";
-import Image from "next/image";
 
-const PatchPage = () => {
+const QuestionPage = () => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
-    if (answer === "3.20 - Sanctum") {
-      await router.push("/sanctum/question/what-are-your-league-plans");
+    if (answer === "Visual Jank") {
+      await router.push("/crucible/builds/venom-gyre");
     }
-    if (answer === "3.21 - Crucible") {
-      await router.push("/crucible/question/what-are-your-league-plans");
+    if (answer === "Gameplay Jank") {
+      await router.push("/crucible/builds/armageddon-brand");
+    }
+    if (answer === "¿Por qué no los dos?") {
+      await router.push("/crucible/builds/maw-of-mischief");
     }
   };
 
   const questionData = {
-    question: "What patch?",
-    answers: ["3.21 - Crucible", "3.20 - Sanctum"],
+    question: "What kind of jank?",
+    answers: ["Visual Jank", "Gameplay Jank", "¿Por qué no los dos?"],
   };
 
   return (
@@ -23,7 +25,7 @@ const PatchPage = () => {
         {questionData?.question}
       </div>
 
-      <div className="mx-auto grid w-full grid-cols-1 items-center justify-center gap-10 py-20 lg:w-2/3 lg:grid-cols-2 xl:w-1/2 ">
+      <div className="mx-auto grid w-full grid-cols-1 items-center justify-center gap-10 py-20 lg:w-2/3 lg:grid-cols-1 xl:w-1/2 ">
         {questionData?.answers.map((answer, index) => (
           <div key={index} className="py-4">
             <button
@@ -39,4 +41,4 @@ const PatchPage = () => {
   );
 };
 
-export default PatchPage;
+export default QuestionPage;

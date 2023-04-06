@@ -1,17 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import YouTube from "react-youtube";
+import { useRouter } from "next/router";
 
-const RighteousFireBuildPage = () => {
+const BuildPage = () => {
   const router = useRouter();
   const buildData = {
-    name: "Righteous Fire",
-    description: `Righteous Fire is a build where you have a damaging fire aura that surrounds you, you clear maps by running head first into enemies and having them die to the damage over time effect surrounding you. This is a great build for those that wish to press less buttons while mapping. This build is very defensively strong and with investment scales into one of the tankiest builds in the game. This build can struggle for damage when it comes to late game bossing.`,
+    name: "Toxic Rain Ballista Pathfinder",
+    description: "",
     youtubeVideos: [
       {
-        url: "Ji0CqE8F3wU",
-        creator: "Pohx",
-        channelUrl: "https://www.youtube.com/@PohxKappa",
+        url: "KAcrchacF8g",
+        creator: "Palsteron",
+        channelUrl: "https://www.youtube.com/@Palsteron",
       },
     ],
   };
@@ -36,17 +37,6 @@ const RighteousFireBuildPage = () => {
       </h3>
       {/* Main Videos */}
 
-      <Link href={"https://www.pohx.net/FAQ"} legacyBehavior>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="  py-2 text-xl font-semibold text-neutral-200"
-        >
-          <button className="h-10 w-72 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
-            Pohx RF Wiki - FAQ
-          </button>
-        </a>
-      </Link>
       <div className="mx-auto grid grid-cols-1 items-center justify-center space-x-4 px-8 lg:grid-cols-1 lg:px-20">
         {buildData.youtubeVideos.map((video, index) => (
           <div key={index} className="py-4">
@@ -68,20 +58,27 @@ const RighteousFireBuildPage = () => {
             </Link>
           </div>
         ))}
-      </div>
-      <div className="pt-20">
-        <button
-          className=" h-20 w-72 rounded-md bg-zinc-800 font-semibold text-neutral-200 hover:bg-zinc-700"
-          onClick={() => router.push("/sanctum/builds/righteous-fire")}
-        >
-          <div className="mx-auto flex flex-row items-center justify-center p-2 text-center ">
-            Last Leagues Variants
-          </div>
-        </button>
+        <div className="pt-20">
+          <button
+            className=" h-20 w-72 rounded-md bg-zinc-800 font-semibold text-neutral-200 hover:bg-zinc-700"
+            onClick={() => router.push("/crucible/question/what-kind-of-dot")}
+          >
+            <div className="mx-auto flex flex-row items-center justify-center p-2 text-center ">
+              <Image
+                src="/prayge.png"
+                alt="copium.jpg"
+                width={70}
+                height={70}
+                className="mb-2 "
+              />
+              Please anything but chaos dot
+            </div>
+          </button>
+        </div>
       </div>
       {/* hardcore variant slot */}
     </div>
   );
 };
 
-export default RighteousFireBuildPage;
+export default BuildPage;

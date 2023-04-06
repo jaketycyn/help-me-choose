@@ -1,20 +1,20 @@
-import { useRouter } from "next/router";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-const PatchPage = () => {
+const QuestionPage = () => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
-    if (answer === "3.20 - Sanctum") {
-      await router.push("/sanctum/question/what-are-your-league-plans");
+    if (answer === "Cheap gear") {
+      await router.push("/crucible/question/you-realize-if-it-was-still");
     }
-    if (answer === "3.21 - Crucible") {
-      await router.push("/crucible/question/what-are-your-league-plans");
+    if (answer === "To prove the haters wrong") {
+      await router.push("/crucible/builds/poison-summon-raging-spirits");
     }
   };
 
   const questionData = {
-    question: "What patch?",
-    answers: ["3.21 - Crucible", "3.20 - Sanctum"],
+    question: "Why?",
+    answers: ["Cheap gear", "To prove the haters wrong"],
   };
 
   return (
@@ -39,4 +39,4 @@ const PatchPage = () => {
   );
 };
 
-export default PatchPage;
+export default QuestionPage;

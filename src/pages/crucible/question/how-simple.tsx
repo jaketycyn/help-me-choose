@@ -7,7 +7,7 @@ const QuestionPage = () => {
       await router.push("/crucible/builds/righteous-fire");
     }
     if (answer === "I just want to press a button and have damage come out") {
-      await router.push("/sanctum/builds/ice-crash-frozen-legion-slayer");
+      await router.push("/crucible/question/is-it-cool-if-the-gear-is-weird");
     }
   };
 

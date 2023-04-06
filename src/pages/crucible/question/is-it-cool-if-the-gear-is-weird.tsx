@@ -1,20 +1,20 @@
 import { useRouter } from "next/router";
-import Image from "next/image";
 
-const PatchPage = () => {
+const QuestionPage = () => {
   const router = useRouter();
   const answerQuestionFunction = async (answer: string) => {
-    if (answer === "3.20 - Sanctum") {
-      await router.push("/sanctum/question/what-are-your-league-plans");
+    if (answer === "Yes") {
+      await router.push("/crucible/builds/toxic-rain-ballista-pathfinder");
     }
-    if (answer === "3.21 - Crucible") {
-      await router.push("/crucible/question/what-are-your-league-plans");
+    if (answer === "No") {
+      await router.push("/crucible/builds/toxic-rain-pathfinder");
     }
   };
 
   const questionData = {
-    question: "What patch?",
-    answers: ["3.21 - Crucible", "3.20 - Sanctum"],
+    question:
+      "It is cool if the gear is a little weird as long as the play style is simple?",
+    answers: ["Yes", "No"],
   };
 
   return (
@@ -39,4 +39,4 @@ const PatchPage = () => {
   );
 };
 
-export default PatchPage;
+export default QuestionPage;
