@@ -3,26 +3,23 @@ import YouTube from "react-youtube";
 
 const BuildPage = () => {
   const buildData = {
-    name: "Ice Shot Raider",
-    description:
-      "Optional swap to Deadeye for better clear when you can afford to drop raider defensives (Spell suppression, elemental avoidance & evasion)",
+    name: "Boneshatter (Slayer / Jugg)",
+    description: "",
     youtubeVideos: [
       {
-        url: "ur4zFC0ThNw",
-        creator: "Fizecs",
-        channelUrl: "https://www.youtube.com/@fizecs",
+        url: "ATfD7vfcmzc",
+        creator: "Carn",
+        channelUrl: "https://www.youtube.com/@carn_9088",
       },
       {
-        url: "XjqBVCjpo0U",
-        creator: "aer0",
-        channelUrl: "https://www.youtube.com/@aer0",
+        url: "rXz5MOdbfbM",
+        creator: "Woolie",
+        channelUrl: "https://www.youtube.com/@Woolie",
       },
-    ],
-    youtubeVideosVariant: [
       {
-        url: "KLFV3L4eQ7A",
-        creator: "Zizaran",
-        channelUrl: "https://www.youtube.com/@Zizaran",
+        url: "u86_1qW8AZQ",
+        creator: "Goratha",
+        channelUrl: "https://www.youtube.com/@Goratha",
       },
     ],
   };

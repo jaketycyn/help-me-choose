@@ -18,6 +18,9 @@ const QuestionPage = () => {
     if (answer === "I want the jank") {
       await router.push("/crucible/question/what-kind-of-jank");
     }
+    if (answer === "melee.... good?") {
+      await router.push("/crucible/question/melee-good");
+    }
   };
 
   const questionData = {

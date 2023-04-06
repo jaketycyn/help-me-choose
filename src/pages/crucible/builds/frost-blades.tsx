@@ -3,26 +3,18 @@ import YouTube from "react-youtube";
 
 const BuildPage = () => {
   const buildData = {
-    name: "Ice Shot Raider",
-    description:
-      "Optional swap to Deadeye for better clear when you can afford to drop raider defensives (Spell suppression, elemental avoidance & evasion)",
+    name: "Frost Blades Trickster",
+    description: "",
     youtubeVideos: [
       {
-        url: "ur4zFC0ThNw",
-        creator: "Fizecs",
-        channelUrl: "https://www.youtube.com/@fizecs",
+        url: "WWCsK5ZJzQM",
+        creator: "Behind Eyes Gaming",
+        channelUrl: "https://www.youtube.com/@BehindEyesGamingPOE",
       },
       {
-        url: "XjqBVCjpo0U",
-        creator: "aer0",
-        channelUrl: "https://www.youtube.com/@aer0",
-      },
-    ],
-    youtubeVideosVariant: [
-      {
-        url: "KLFV3L4eQ7A",
-        creator: "Zizaran",
-        channelUrl: "https://www.youtube.com/@Zizaran",
+        url: "4qn23z6hg4w",
+        creator: "Zish",
+        channelUrl: "https://www.youtube.com/@ZishPOE",
       },
     ],
   };
@@ -34,9 +26,8 @@ const BuildPage = () => {
       autoplay: 0,
     },
   };
-
   return (
-    <div className="h-fit  text-center">
+    <div className="h-fit text-center">
       {/* Build Slot */}
       <h1 className=" pt-20 pb-4 text-center text-3xl font-semibold text-neutral-200">
         {buildData.name}
@@ -60,7 +51,7 @@ const BuildPage = () => {
                 rel="noopener noreferrer"
                 className="  py-2 text-xl font-semibold text-neutral-200"
               >
-                <button className="h-10 w-40 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
+                <button className="h-10 w-52 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
                   {video.creator}
                 </button>
               </a>

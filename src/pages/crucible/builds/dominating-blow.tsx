@@ -3,19 +3,13 @@ import YouTube from "react-youtube";
 
 const BuildPage = () => {
   const buildData = {
-    name: "Ice Shot Raider",
-    description:
-      "Optional swap to Deadeye for better clear when you can afford to drop raider defensives (Spell suppression, elemental avoidance & evasion)",
+    name: "Dominating Blow",
+    description: "",
     youtubeVideos: [
       {
-        url: "ur4zFC0ThNw",
-        creator: "Fizecs",
-        channelUrl: "https://www.youtube.com/@fizecs",
-      },
-      {
-        url: "XjqBVCjpo0U",
-        creator: "aer0",
-        channelUrl: "https://www.youtube.com/@aer0",
+        url: "Feul_7WzYwg",
+        creator: "Cardboard Bastards",
+        channelUrl: "https://www.youtube.com/@cardboardbastards",
       },
     ],
     youtubeVideosVariant: [
@@ -46,7 +40,7 @@ const BuildPage = () => {
         {buildData.description}
       </h3>
       {/* Main Videos */}
-      <div className="mx-auto grid grid-cols-1 items-center justify-center space-x-4 px-8 lg:grid-cols-2 lg:px-20">
+      <div className="mx-auto grid grid-cols-1 items-center justify-center space-x-4 px-8 lg:grid-cols-1 lg:px-20">
         {buildData.youtubeVideos.map((video, index) => (
           <div key={index} className="py-4">
             <YouTube
@@ -60,7 +54,7 @@ const BuildPage = () => {
                 rel="noopener noreferrer"
                 className="  py-2 text-xl font-semibold text-neutral-200"
               >
-                <button className="h-10 w-40 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
+                <button className="h-10 w-52 rounded-3xl bg-zinc-800 hover:bg-zinc-700">
                   {video.creator}
                 </button>
               </a>
